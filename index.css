@@ -1,0 +1,220 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  padding: 20px 50px;
+  background-color: rgb(18, 160, 146);
+}
+
+#nav-links {
+  display: flex;
+  list-style-type: none;
+  font-size: 1rem;
+  gap: 3rem;
+  padding-top: 1rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+#nav-links li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* ########################################################## */
+
+.display-section {
+  display: block;
+}
+
+.awesome-text {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.book-text {
+  color: rgb(18, 160, 146);
+}
+
+.time_div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 30px;
+  padding-left: 20%;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 1000px;
+  height: 450px;
+  top: 10%;
+}
+
+.myBooks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.books_list_main_div {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+}
+
+.bookLists {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.bookList {
+display: flex;
+justify-content: space-between;
+margin-top: 7px;
+margin-left: 40px;
+align-items: center;
+background: #f7f7f7;
+padding: 5px;
+border-bottom: 0.6px solid rgb(182, 182, 182);
+border-radius: 5px;
+height: 40px;
+width: 90%;
+box-shadow: 3px 3px rgb(0, 0, 1, 0.5);
+font-weight: bold;
+flex-wrap: wrap;
+}
+
+.deleteTask {
+cursor: pointer;
+width: 55px;
+height: 25px;
+text-align: center;
+border-radius: 10px;
+border-style: none;
+background: orangered;
+color: #ffffff;
+outline: none;
+align-items: center;
+margin: 0;
+padding: 0;
+}
+
+.deleteTask:hover {
+  width: 60px;
+  height: 30px;
+  font-weight: 700;
+}
+
+.titleText{
+  background: #fff;
+  text-transform: capitalize;
+}
+
+.input_value{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 5px;
+  gap: 10px;
+  margin-bottom: 60px;
+}
+
+.inputVal{
+  width: 95%;
+  padding-left: 5px;
+  height: 50px;
+  border-radius: 5px;
+  margin-right: 5px;
+  border: 2px solid rgb(18, 160, 146);
+
+}
+
+#logo {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.add_btn_div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: end;
+  padding-right: 6%;
+}
+
+.btn{
+  width: 150px;
+  height: 40px;
+  background: rgb(18, 160, 146);
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  outline-style: none;
+  border-radius: 5px;
+  border-style: none;
+  cursor: pointer; 
+}
+
+/* ########################################################## */
+
+.contact_info {
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.contact_info ul {
+  list-style: none;
+}
+
+.social_links {
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.social_links:hover {
+  color: rgb(18, 160, 146);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  margin-top: 200px;
+  background-color: rgb(18, 160, 146);
+}
