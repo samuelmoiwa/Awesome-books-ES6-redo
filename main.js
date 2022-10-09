@@ -5,14 +5,13 @@ import time from "./modules/dateTime.js";
 
 const inputBookTitle = document.getElementById("book_title");
 const inputBookAuthor = document.getElementById("book_author");
+const errorMessage = document.querySelector('.error_message')
 
-const addBookBtn = document.getElementsByClassName("btn")[0];
+const addBookBtn = document.querySelector(".btn");
 
 let taskList = [];
-
-
-
-addBookBtn.addEventListener("click", () => {
+  
+ addBookBtn.addEventListener("click", () => {
   // eslint-disable-next-line eqeqeq
   if (inputBookTitle.value.trim() != 0 && inputBookAuthor.value.trim() != 0) {
     const localItems = JSON.parse(localStorage.getItem("localItem"));
@@ -25,13 +24,13 @@ addBookBtn.addEventListener("click", () => {
     localStorage.setItem("localItem", JSON.stringify(taskList));
     inputBookAuthor.value = "";
     inputBookTitle.value = "";
-    showItem();
+    ClassShowListItems.showItem();
   }
 });
+  
 
-
-
-function showItem() {
+class ClassShowListItems {
+  static showItem() {
   let localItems = JSON.parse(localStorage.getItem("localItem"));
   if (localItems === null) {
     taskList = [];
@@ -53,13 +52,14 @@ function showItem() {
   });
   itemShow.innerHTML = html;
 }
-showItem();
+}
+ClassShowListItems.showItem();
 
 function deleteItem(i) {
   let localItems = JSON.parse(localStorage.getItem("localItem"));
   localItems.splice(i, 1);
   localStorage.setItem("localItem", JSON.stringify(localItems));
-  showItem();
+  ClassShowListItems.showItem();
 }
 
 const deleteTaskBtns = document.querySelectorAll(".deleteTask");
