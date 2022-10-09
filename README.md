@@ -2,6 +2,8 @@
 
 # Awesome Books
 
+[Live link: github pages](https://samuelmoiwa.github.io/Awesome-books-ES6-redo/)
+
 > Description the project.
 - simple HTML & javaScript code, that displays list of added    books by the user in the browser.
 - configure with linters 
