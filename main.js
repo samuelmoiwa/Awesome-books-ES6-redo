@@ -40,7 +40,7 @@ class ClassShowListItems {
     const itemShow = document.querySelector('.bookLists');
     taskList.forEach((bookTitle, index) => {
       html += `
-    <div class="todoListItems">
+    <div class="bookListItems">
       <div class="bookList">
         <p class="titleText">${bookTitle}</p>
         <button type="button" class="deleteTask" data-index="${index}"> Delete </button>
