@@ -216,3 +216,10 @@ footer {
   margin-top: 200px;
   background-color: rgb(18, 160, 146);
 }
+
+@media only screen and (max-width: 600px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  } 
+}
