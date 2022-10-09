@@ -1,18 +1,17 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
-body{
+
+body {
   display: flex;
   flex-direction: column;
   align-items: center;
   background: #fff;
-
 }
 
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   justify-content: space-between;
   width: 90%;
@@ -59,7 +58,7 @@ body{
   padding-left: 20%;
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -93,35 +92,35 @@ body{
 }
 
 .bookList {
-display: flex;
-justify-content: space-between;
-margin-top: 7px;
-margin-left: 40px;
-align-items: center;
-background: #f7f7f7;
-padding: 5px;
-border-bottom: 0.6px solid rgb(182, 182, 182);
-border-radius: 5px;
-height: 40px;
-width: 90%;
-box-shadow: 3px 3px rgb(0, 0, 1, 0.5);
-font-weight: bold;
-flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7px;
+  margin-left: 40px;
+  align-items: center;
+  background: #f7f7f7;
+  padding: 5px;
+  border-bottom: 0.6px solid rgb(182, 182, 182);
+  border-radius: 5px;
+  height: 40px;
+  width: 90%;
+  box-shadow: 3px 3px rgb(0, 0, 1, 0.5);
+  font-weight: bold;
+  flex-wrap: wrap;
 }
 
 .deleteTask {
-cursor: pointer;
-width: 55px;
-height: 25px;
-text-align: center;
-border-radius: 10px;
-border-style: none;
-background: orangered;
-color: #ffffff;
-outline: none;
-align-items: center;
-margin: 0;
-padding: 0;
+  cursor: pointer;
+  width: 55px;
+  height: 25px;
+  text-align: center;
+  border-radius: 10px;
+  border-style: none;
+  background: orangered;
+  color: #fff;
+  outline: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .deleteTask:hover {
@@ -130,12 +129,12 @@ padding: 0;
   font-weight: 700;
 }
 
-.titleText{
+.titleText {
   background: #fff;
   text-transform: capitalize;
 }
 
-.input_value{
+.input_value {
   display: none;
   flex-direction: column;
   align-items: center;
@@ -145,14 +144,13 @@ padding: 0;
   margin-bottom: 60px;
 }
 
-.inputVal{
+.inputVal {
   width: 95%;
   padding-left: 5px;
   height: 50px;
   border-radius: 5px;
   margin-right: 5px;
   border: 2px solid rgb(18, 160, 146);
-
 }
 
 #logo {
@@ -172,7 +170,7 @@ padding: 0;
   padding-right: 6%;
 }
 
-.btn{
+.btn {
   width: 150px;
   height: 40px;
   background: rgb(18, 160, 146);
@@ -182,7 +180,7 @@ padding: 0;
   outline-style: none;
   border-radius: 5px;
   border-style: none;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 /* ########################################################## */
